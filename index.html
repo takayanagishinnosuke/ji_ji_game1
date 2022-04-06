@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>どっかのじじいのいうとおり</h1>
+  </header>
+
+  <div class="Mainimg">
+    <img src="img/normal.png" alt="" id="topimg">
+  </div>
+
+  <div class="HPMP">
+    <div class="HP">
+      <p id="Time">じじいの体力</p>
+      <meter id="meter" min="0" max="60" low="30" optimum="50" value="100" style="width: 150px; height: 20px;">60/60</meter>
+    </div>
+
+    <div class="MP">
+      <p id="happines">じじいの幸福度</p>
+      <meter id="happinesmeter" min="0" max="10" low="0" optimum="3" value="0" style="width: 150px; height:20px;">10/10</meter>
+    </div>
+  </div>
+
+  <div class="Message">
+    <span id="message">死にそうなじじいが現れた!</span>
+  </div>
+
+  <div class="Question">
+    <span id="ques">じじいが要求するものを見せてあげよう</span>
+  </div>
+
+  <div class="startbtn">
+    <button id="start">はじめる</button>
+  </div>
+
+  <div class="Last">
+    <span class="LastMessage">さいこうにハイってやつだ!!!</span>
+    <button id="end">おわり</button>
+  </div>
+
+
+<div class="Postimg">
+  <div class="fileimg-btn">ファイルを選択<input id="file-img" type="file" ></div>
+  <div class="add-btn"><button id="btn" >じじいにみせる</button></div>
+  <img src="img/postimg.gif" id="post_image">
+</div>
+
+<!-- <div class="footer"><footer>©しにそうなじじい</footer></div> -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
